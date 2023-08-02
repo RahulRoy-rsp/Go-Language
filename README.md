@@ -59,3 +59,65 @@ Concepts about the GoLang I learned so far...
 
 ## [Click to see a Go Program for variable declaration](https://github.com/RahulRoy-rsp/Go-Language/blob/main/variables.go)
 ---
+## OPERATORS
+
+In the Go programming language, operators are symbols or keywords used to perform various operations on variables, constants, and expressions. They are fundamental building blocks for performing arithmetic, logical, bitwise, and other types of operations in Go. Here are the different types of operators available in Go:
+
+1. **Arithmetic Operators**:
+   - Addition (+): to add the values.
+     - Eg: a+b will give the addition of a and b.
+
+   - Subtraction (-): to subtract the values.
+     - Eg: a-b will give the value of a minus b.
+
+   - Multiplication (*): to get the product of values.
+     - Eg: a*b will give the value of a multiplied by b.
+
+   - Division (/): to divide the values.
+     - Eg: a/b will give the value of a divide by b.
+
+   - Remainder (Modulus) (%): to get the remainder while dividing two values.
+     - Eg: a%b will give the value of remainder while divinding a by b.
+
+3. **Relational Operators**:
+   - Equal to (==): checks if two values are equal or not, if equal then returns `TRUE` and if not then `False`.
+     - Eg: a==b will check if the value of a is equals to b, if yes then returns TRUE and if not then FALSE.
+
+   - Not equal to (!=): checks if two values are not equal, if not equals then returns `TRUE` and if equals then `False`.
+      - Eg: a!=b will check if the value of a is not equal to b, if yes then returns TRUE and if not then FALSE.
+
+   - Greater than (>): checks if the value on left side is greater than the right side of the operand(>), if yes then returns `TRUE` and if not then `False`.
+      - Eg: a>b will check if the value of a is greater than b, if yes then returns TRUE and if not then FALSE.
+
+   - Greater than or equal to (>=): checks if the value on left side is greater or equal than the right side of the operand(>=), if yes then returns `TRUE` and if not then `False`.
+      - Eg: a>=b will check if the value of a is greater or equal than b, if yes then returns TRUE and if not then FALSE.
+
+   - Less than (<): checks if the value on left side is lesser than the right side of the operand(<), if yes then returns `TRUE` and if not then `False`.
+      - Eg: a<b will check if the value of a is lesser than b, if yes then returns TRUE and if not then FALSE.
+
+   - Less than or equal to (<=): checks if the value on left side is lesser or equal than the right side of the operand(<=), if yes then returns `TRUE` and if not then `False`.
+      - Eg: a<=b will check if the value of a is lesser or equal than b, if yes then returns TRUE and if not then FALSE.
+   
+5. **Logical Operators**:
+   - Logical AND (&&)
+   - Logical OR (||)
+   - Logical NOT (!)
+
+6. **Bitwise Operators**:
+   - Bitwise AND (&)
+   - Bitwise OR (|)
+   - Bitwise XOR (^)
+   - Bitwise left shift (<<)
+   - Bitwise right shift (>>)
+
+7. **Assignment Operators**:
+   - Assignment (=)
+   - Add and assign (+=)
+   - Subtract and assign (-=)
+   - Multiply and assign (*=)
+   - Divide and assign (/=)
+
+*NOTE: There are many other operators available too, so you can refer them online On Google.*
+
+## [Click to see a Go Program for some of Operators available](https://github.com/RahulRoy-rsp/Go-Language/blob/main/operators.go)
+---
