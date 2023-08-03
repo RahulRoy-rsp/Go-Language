@@ -64,60 +64,101 @@ Concepts about the GoLang I learned so far...
 In the Go programming language, operators are symbols or keywords used to perform various operations on variables, constants, and expressions. They are fundamental building blocks for performing arithmetic, logical, bitwise, and other types of operations in Go. Here are the different types of operators available in Go:
 
 1. **Arithmetic Operators**:
-   - Addition (+): to add the values.
+   - Addition ( + ): to add the values.
      - Eg: a+b will give the addition of a and b.
 
-   - Subtraction (-): to subtract the values.
+   - Subtraction ( - ): to subtract the values.
      - Eg: a-b will give the value of a minus b.
 
-   - Multiplication (*): to get the product of values.
+   - Multiplication ( * ): to get the product of values.
      - Eg: a*b will give the value of a multiplied by b.
 
-   - Division (/): to divide the values.
+   - Division ( / ): to divide the values.
      - Eg: a/b will give the value of a divide by b.
 
-   - Remainder (Modulus) (%): to get the remainder while dividing two values.
+   - Remainder (Modulus) ( % ): to get the remainder while dividing two values.
      - Eg: a%b will give the value of remainder while divinding a by b.
 
 3. **Relational Operators**:
-   - Equal to (==): checks if two values are equal or not, if equal then returns `TRUE` and if not then `False`.
+   - Equal to ( == ): checks if two values are equal or not, if equal then returns `TRUE` and if not then `False`.
      - Eg: a==b will check if the value of a is equals to b, if yes then returns TRUE and if not then FALSE.
 
-   - Not equal to (!=): checks if two values are not equal, if not equals then returns `TRUE` and if equals then `False`.
+   - Not equal to ( != ): checks if two values are not equal, if not equals then returns `TRUE` and if equals then `False`.
       - Eg: a!=b will check if the value of a is not equal to b, if yes then returns TRUE and if not then FALSE.
 
-   - Greater than (>): checks if the value on left side is greater than the right side of the operand(>), if yes then returns `TRUE` and if not then `False`.
+   - Greater than ( > ): checks if the value on left side is greater than the right side of the operand(>), if yes then returns `TRUE` and if not then `False`.
       - Eg: a>b will check if the value of a is greater than b, if yes then returns TRUE and if not then FALSE.
 
-   - Greater than or equal to (>=): checks if the value on left side is greater or equal than the right side of the operand(>=), if yes then returns `TRUE` and if not then `False`.
+   - Greater than or equal to ( >= ): checks if the value on left side is greater or equal than the right side of the operand(>=), if yes then returns `TRUE` and if not then `False`.
       - Eg: a>=b will check if the value of a is greater or equal than b, if yes then returns TRUE and if not then FALSE.
 
-   - Less than (<): checks if the value on left side is lesser than the right side of the operand(<), if yes then returns `TRUE` and if not then `False`.
+   - Less than ( < ): checks if the value on left side is lesser than the right side of the operand(<), if yes then returns `TRUE` and if not then `False`.
       - Eg: a<b will check if the value of a is lesser than b, if yes then returns TRUE and if not then FALSE.
 
-   - Less than or equal to (<=): checks if the value on left side is lesser or equal than the right side of the operand(<=), if yes then returns `TRUE` and if not then `False`.
+   - Less than or equal to ( <= ): checks if the value on left side is lesser or equal than the right side of the operand(<=), if yes then returns `TRUE` and if not then `False`.
       - Eg: a<=b will check if the value of a is lesser or equal than b, if yes then returns TRUE and if not then FALSE.
    
 5. **Logical Operators**:
-   - Logical AND (&&)
-   - Logical OR (||)
-   - Logical NOT (!)
+   - Logical AND ( && ): Performs AND operation on two operands, meaning that both the values on the side of the operator(&&) must be equal to return TRUE, otherwise it will return FALSE.
+     -  Eg: Suppose `a` have value `TRUE` and `b` have value `FALSE`, then `a && b` will have value `FALSE`, because both the values are not equal.
 
-6. **Bitwise Operators**:
-   - Bitwise AND (&)
-   - Bitwise OR (|)
-   - Bitwise XOR (^)
-   - Bitwise left shift (<<)
-   - Bitwise right shift (>>)
+   - Logical OR ( || ): Performs OR operation on two operands, meaning that if one of the values on the side of the operator(||) is TRUE, then it will return TRUE, otherwise it will return FALSE.
+     -  Eg: Suppose `a` have value `TRUE` and `b` have value `FALSE`, then `a || b` will have value `TRUE`, because one of the value is TRUE.
+    
+   - Logical NOT ( ! ): Performs NOT operation, meaning it will negate/oppose the value.
+     -  Eg: Suppose `a` have value `TRUE` and `b` have value `FALSE`, then `!a` will have value `False` and `!b` will have `TRUE`.
+       
+7. **Bitwise Operators**:
+   - Bitwise AND ( & ): Performs bitwise AND operation on each corresponding bit of the operands.
+     - Eg: 
 
-7. **Assignment Operators**:
-   - Assignment (=)
-   - Add and assign (+=)
-   - Subtract and assign (-=)
-   - Multiply and assign (*=)
-   - Divide and assign (/=)
+   - Bitwise OR ( | ): Performs bitwise OR operation on each corresponding bit of the operands.
+      - Eg:
+   - Bitwise XOR ( ^ ): Performs bitwise XOR operation on each corresponding bit of the operands.
+     - Eg:
+       
+   - Bitwise left shift ( << ): Shifts the bits of the left operand to the left by the number of positions specified by the right operand.
+     - Eg:
 
+   - Bitwise right shift ( >> ): Shifts the bits of the left operand to the right by the number of positions specified by the right operand.
+     - Eg:
+
+8. **Assignment Operators**:
+   - Assignment ( = )
+      - Eg:
+
+   - Add and assign ( += )
+      - Eg:
+
+   - Subtract and assign ( -= )
+      - Eg:
+
+   - Multiply and assign ( *= )
+      - Eg:
+
+   - Divide and assign ( /= )
+      - Eg:
+        
 *NOTE: There are many other operators available too, so you can refer them online On Google.*
 
 ## [Click to see a Go Program for some of Operators available](https://github.com/RahulRoy-rsp/Go-Language/blob/main/operators.go)
+---
+## Conditional Statements:
+
+1. **if statement**:
+  - Eg:
+    
+2. **if - else statement**:
+  - Eg:
+    
+3. **if - else if - else statement**:
+  - Eg:
+    
+4. **Switch statement**:
+  - Eg:
+     
+5. **Nested if statement**:
+  - Eg:
+    
+## [Click to see a Go Program for implementation of conditional statements](https://github.com/RahulRoy-rsp/Go-Language/blob/main/conditions.go)
 ---
