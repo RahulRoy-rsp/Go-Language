@@ -110,34 +110,77 @@ In the Go programming language, operators are symbols or keywords used to perfor
        
 7. **Bitwise Operators**:
    - Bitwise AND ( & ): Performs bitwise AND operation on each corresponding bit of the operands.
-     - Eg: 
+     - It sets the bit as 1 if both the values that it is comparing to is 1, otherwise it will set as 0.
+     - Eg: Suppose x := 9, y := 8, then the compiler will convert it into binary form.
+     - x as 1001 and y as 1000.
+       | **x** | **y** 	| **x & y** |   
+	     |:-----:|:-----:|:---------:|	
+   	   |   1   	|   1   	|    _1_  |   
+   	   |   0   	|   0   	|    _0_  | 
+   	   |   0   	|   0   	|    _0_  |
+       |   1   	|   0     |    _0_  |
+       
+       1000 is the answer which is equivalent to `8` in decimal form.
 
    - Bitwise OR ( | ): Performs bitwise OR operation on each corresponding bit of the operands.
-      - Eg:
+     - It sets the bit as 1 if one of the values that it is comparing to is 1, otherwise if all the values is 0 then it will set as 0.
+     - Eg: Suppose x := 9, y := 8, then the compiler will convert it into binary form.
+     - x as 1001 and y as 1000.
+
+       | **x** | **y** 	| **x or y** |   
+	     |:-----:|:-----:|:---------:|	
+   	   |   1   	|   1   	|    _1_  |   
+   	   |   0   	|   0   	|    _0_  | 
+   	   |   0   	|   0   	|    _0_  |
+       |   1   	|   0     |    _1_  |
+  
+        1001 is the answer which is equivalent to `9` in decimal form.
+
    - Bitwise XOR ( ^ ): Performs bitwise XOR operation on each corresponding bit of the operands.
-     - Eg:
+     - It sets the bit as 1 if both the values that it is comparing to is unique from each other, otherwise if both the values are same then, it will set as 0.
+     - Eg: Suppose x := 9, y := 8, then the compiler will convert it into binary form.
+     - x as 1001 and y as 1000.
+
+       | **x** | **y** 	| **x ^ y** |   
+	     |:-----:|:-----:|:---------:|	
+   	   |   1   	|   1   	|    _0_  |   
+   	   |   0   	|   0   	|    _0_  | 
+   	   |   0   	|   0   	|    _0_  |
+       |   1   	|   0     |    _1_  |
+  
+        0001 is the answer which is equivalent to `1` in decimal form.
        
    - Bitwise left shift ( << ): Shifts the bits of the left operand to the left by the number of positions specified by the right operand.
-     - Eg:
+     - Eg: Suppose, i := 4 and we want to calculate i << 2
+     - So, the binary form of i will be 100.
+     - Since we want to shift 2 bits to the left side, thus 2 0's will be added to the end.
+     - 100 --> 10000 which is equivalent to 16 in decimal form.
 
    - Bitwise right shift ( >> ): Shifts the bits of the left operand to the right by the number of positions specified by the right operand.
-     - Eg:
+    - Eg: Suppose, i := 4 and we want to calculate i >> 2
+    - So, the binary form of i will be 100.
+    - Since we want to shift 2 bits to the right side, thus the last 2 bits will be removed from the end and added to the beginning.
+    - 100 --> 001 which is equivalent to 1 in decimal form.
 
-8. **Assignment Operators**:
-   - Assignment ( = )
-      - Eg:
+9. **Assignment Operators**:
+   - Assignment ( = ): It is used to assign values to variable/operand.
+      - Eg: Suppose you have declared a variable as `var x`, then you can you assign value to x as `x = 44`
 
-   - Add and assign ( += )
-      - Eg:
+   - Add and assign ( += ): It can be used to increment the value of operand on the left side of operator with the value on the right side of the operator. 
+      - Eg: Suppose you want to increment the value of x by 5, then you will write as `x += 5`.
+      - `x += 5` is same as `x = x + 5`.
 
-   - Subtract and assign ( -= )
-      - Eg:
+   - Subtract and assign ( -= ): It can be used to decrement the value of operand on the left side of operator with the value on the right side of the operator. 
+      - Eg: Suppose you want to decrement the value of x by 5, then you will write as `x -= 5`.
+      - `x -= 5` is same as `x = x - 5`.
 
-   - Multiply and assign ( *= )
-      - Eg:
+   - Multiply and assign ( *= ): It can be used to multiply the value of operand on the left side of operator with the value on the right side of the operator. 
+      - Eg: Suppose you want to multiply the value of x by 5, then you will write as `x *= 5`.
+      - `x *= 5` is same as `x = x * 5`.
 
-   - Divide and assign ( /= )
-      - Eg:
+   - Divide and assign ( /= ): It can be used to divide the value of operand on the left side of operator with the value on the right side of the operator. 
+      - Eg: Suppose you want to divide the value of x by 5, then you will write as `x /= 5`.
+      - `x /= 5` is same as `x = x / 5`.
         
 *NOTE: There are many other operators available too, so you can refer them online On Google.*
 
