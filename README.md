@@ -186,22 +186,110 @@ In the Go programming language, operators are symbols or keywords used to perfor
 
 ## [Click to see a Go Program for some of Operators available](https://github.com/RahulRoy-rsp/Go-Language/blob/main/operators.go)
 ---
+
 ## Conditional Statements:
 
-1. **if statement**:
+1. **if statement**: The if statement is a fundamental control structure in Go, allowing you to execute a block of code only if a specified condition is met. If the condition evaluates to true, the code inside the block is executed.
+  - Syntax:
+    ```go
+    if condition {
+        // Code to execute if condition is true
+    }
+    ```
   - Eg:
-    
-2. **if - else statement**:
+    ```go
+    age := 18
+    if age >= 18 {
+        fmt.Println("You are an adult.")
+    }
+    ```
+
+2. **if - else statement**: The if - else statement extends the basic if structure by providing an alternative code block that is executed when the condition is false. It allows the program to take different paths based on the outcome of the condition.
+  - Syntax:
+    ```go
+    if condition {
+        // Code to execute if condition is true
+    } else {
+        // Code to execute if condition is false
+    }
+    ```
   - Eg:
-    
-3. **if - else if - else statement**:
+    ```go
+    temperature := 25
+    if temperature > 30 {
+        fmt.Println("It's hot outside.")
+    } else {
+        fmt.Println("It's not too hot.")
+    }
+    ```
+
+3. **if - else if - else statement**: The if - else if - else statement allows for multiple conditions to be checked in sequence. It is useful when there are more than two possible outcomes. The code associated with the first true condition is executed, and if none of the conditions are true, the else block is executed.
+  - Syntax:
+    ```go
+    if condition1 {
+        // Code to execute if condition1 is true
+    } else if condition2 {
+        // Code to execute if condition2 is true
+    } else {
+        // Code to execute if all conditions are false
+    }
+    ```
   - Eg:
-    
-4. **Switch statement**:
+    ```go
+    score := 85
+    if score >= 90 {
+        fmt.Println("You got an A.")
+    } else if score >= 80 {
+        fmt.Println("You got a B.")
+    } else {
+        fmt.Println("You can do better next time.")
+    }
+    ```
+
+4. **Switch statement**: The switch statement provides a way to select one of many code blocks to be executed based on the value of a variable. It's an alternative to using multiple if and else if statements when comparing a single value against multiple possibilities.
+  - Syntax:
+    ```go
+    switch variable {
+    case value1:
+        // Code to execute if variable equals value1
+    case value2:
+        // Code to execute if variable equals value2
+    default:
+        // Code to execute if none of the cases match
+    }
+    ```
   - Eg:
-     
-5. **Nested if statement**:
+    ```go
+    day := "Monday"
+    switch day {
+    case "Monday":
+        fmt.Println("It's the start of the week.")
+    case "Friday":
+        fmt.Println("It's almost the weekend.")
+    default:
+        fmt.Println("It's just another day.")
+    }
+    ```
+
+5. **Nested if statement**: A nested if statement occurs when you have an if statement inside another if statement. This allows for more complex conditional logic where one condition is dependent on another condition being true.
+  - Syntax:
+    ```go
+    if condition1 {
+        if condition2 {
+            // Code to execute if both conditions are true
+        }
+    }
+    ```
   - Eg:
+    ```go
+    num1 := 10
+    num2 := 5
+    if num1 > 0 {
+        if num2 > 0 {
+            fmt.Println("Both numbers are positive.")
+        }
+    }
+    ```
     
 ## [Click to see a Go Program for implementation of conditional statements](https://github.com/RahulRoy-rsp/Go-Language/blob/main/conditions.go)
 ---
